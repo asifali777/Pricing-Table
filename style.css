@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,h2,p {
+  margin: 0;
+  padding: 0;
+}
+.main-div {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.main-container {
+  width: 260px;
+  height: 545px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 3px 2px 9px rgba(0,0,0,0.5);
+}
+.Category {
+  width: 100%;
+  height: 110px;
+  background: linear-gradient(
+    133deg,
+    rgba(224, 215, 20, 1) 10%,
+    rgba(209, 18, 28, 1) 66%,
+    rgba(255, 0, 0, 0.9669117647058824) 100%
+  );
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.second-card{
+  background: linear-gradient(133deg, rgba(93,129,232,1) 10%, rgb(32, 6, 149) 66%, rgba(0, 0, 103, 0.967) 100%);
+}
+.third-card{
+  background: linear-gradient(133deg, rgba(173,235,64,1) 2%, rgba(8,155,125,1) 38%, rgba(2,42,21,1) 100%);
+}
+.Category > h2 {
+  color: white;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.Category > p {
+  font-size: smaller;
+  padding-bottom: 10px;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.pricing {
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+  text-align: center;
+}
+.pricing > p {
+  font-size: 100px;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.pricing > p > span {
+  font-weight: bolder;
+}
+.pricing > p > sup,
+sub {
+  font-size: 40px;
+}
+.pricing > p > sub{
+  color: grey;
+}
+.details{
+  width: 100%;
+  height: 150px;
+  display: grid;
+
+}
+.details-sub{
+  display: flex;
+  padding-left: 10px;
+
+}
+.details-sub>.text>p{
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+}
+.text{
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  color: rgb(89, 88, 88);
+}
+.button{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  
+}
+.button1{
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(
+    133deg,
+    rgba(224, 215, 20, 1) 10%,
+    rgba(209, 18, 28, 1) 66%,
+    rgba(255, 0, 0, 0.9669117647058824) 100%
+  );
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; 
+}
+.button1:hover{
+  box-shadow: 0 0 20px #c5b30e;
+}
+.button2{
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(133deg, rgba(93,129,232,1) 10%, rgb(32, 6, 149) 66%, rgba(0, 0, 103, 0.967) 100%);
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; 
+}
+.button2:hover{
+  box-shadow: 0 0 20px rgb(51, 14, 197)
+}
+.Button3{
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(133deg, rgba(173,235,64,1) 2%, rgba(8,155,125,1) 38%, rgba(2,42,21,1) 100%);
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.Button3:hover{
+  box-shadow: 0 0 20px rgb(14, 197, 96)
+}
+@media (max-width: 768px) {
+  .main-div {
+    flex-direction: column;
+    height: 100%;
+    margin: 1rem 0;
+
+  }
+}
